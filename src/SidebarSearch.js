@@ -8,8 +8,7 @@ export default class SidebarSearch extends Component {
       query: ""
     };
   }
-  //filters venues using the search input
-  // credit to Forrest Walker for these filtering methods. https://www.youtube.com/playlist?list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP
+  //filters venues
   handleFilterVenues = () => {
     if (this.state.query.trim() !== "") {
       const items = this.props.items.filter(item =>
@@ -19,7 +18,6 @@ export default class SidebarSearch extends Component {
     }
     return this.props.items;
   };
-
   handleChange = e => {
     this.setState({ query: e.target.value });
     const markers = this.props.items.map(item => {
@@ -46,7 +44,7 @@ export default class SidebarSearch extends Component {
           role="search"
           type={"search"}
           id={"search"}
-          placeholder={"Filter Venues"}
+          placeholder={"Filter"}
           onChange={this.handleChange}
         />
         <List
