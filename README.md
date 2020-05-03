@@ -1,4 +1,4 @@
-# MyReads Project
+# The Neighborhood map application
 * [Description](#Description)
 * [Installation](#Installation)
 * [Instructions](#Instructions)
